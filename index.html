@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register form </title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<style>
+		input[type="radio"]
+		{
+			width: 20px;
+			margin:10px;
+		}
+		.form{
+			width:450px;
+			margin-top: 100px;
+		}
+
+	
+	</style>
+</head>
+<body>
+<div class="container d-flex justify-content-center main">
+	<form method="post" action="form.php" class="form" enctype="multipart/form-data">
+		<div class="form-group ">
+			<label for="fname">First name</label>
+			<input type="text" name="fname" class="form-control" placeholder="enter name" value="" required>
+		</div>
+		<div class="form-group">
+			<label for="sname">second name</label>
+			<input type="text" name="sname" class="form-control" placeholder="enter name" value=""required>
+		</div>
+
+		<div class="form-group radio-inline">
+			<label for="gender">gender</label>	<br>
+			<input type="radio" name="gender" class="gender" id="option1" value="male" required >male
+			<input type="radio" name="gender" class="gender" value="female" id="option2"required >female
+			<input type="radio" name="gender" class="gender" value="other" id="option3"required>other
+		</div>
+		<div class="form-group">
+			<label for="pnumber">Number</label>
+			<input type="tel" name="pnumber" placeholder="enter number" class="form-control">
+		</div>
+		<div class="form-group">
+			<label for="instagram">Instagram</label>
+			<input type="text" name="instagram" placeholder="enter insta id " class="form-control" value="">
+		</div>
+		<div class="form-group">
+			<label for="relation">Relation Ship Status </label><br>
+			<input type="radio" name="status" value="single" class="status">single
+			<input type="radio" name="status" value="taken" class="status">taken
+		</div>
+		<div class="form-group">
+			<label for="fantasy">Dreams and fantasy </label>
+			<textarea class="form-control" rows="3" name="fantasy" value=""></textarea>
+		</div>
+		<div class="form-group">
+			<label for="meet">How we met </label>
+			<textarea class="form-control" rows="3" name="meet" value=""></textarea>
+		</div>
+		<div class="form-group">
+			<label for="you">About you</label>
+			<textarea class="form-control" rows="3" name="you" value=""></textarea>
+		</div>
+		<div class="form-group">
+			<label for="me">About me			
+			</label>
+			<textarea class="form-control" rows="3" name="me" value=""></textarea>
+		</div>
+		<label>Select Image File:</label>
+    <input type="file" name="image">
+    
+<br>
+		<button type="submit" class="btn btn-primary mt-5" name="submit" value="upload">Submit </button>
+	</form>
+
+
+</div>
+</body>
+</html>
